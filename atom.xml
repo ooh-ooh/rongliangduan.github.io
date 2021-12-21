@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-12-21T03:45:39.098Z</updated>
+  <updated>2021-12-21T03:50:38.480Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>231. Power of Two</title>
+    <title>LeetCode 231. Power of Two</title>
     <link href="http://yoursite.com/2021/12/21/leetcode_231_power_of_two/"/>
     <id>http://yoursite.com/2021/12/21/leetcode_231_power_of_two/</id>
     <published>2021-12-20T16:00:00.000Z</published>
-    <updated>2021-12-21T03:45:39.098Z</updated>
+    <updated>2021-12-21T03:50:38.480Z</updated>
     
     <content type="html"><![CDATA[<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isPowerOfTwo</span>(<span class="params">n: <span class="built_in">number</span></span>): <span class="title">boolean</span> </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> m=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(m&lt;n)&#123;</span><br><span class="line">          m=m*<span class="number">2</span></span><br><span class="line">          &#125;</span><br><span class="line">    <span class="keyword">return</span> m==n</span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>This solution is to do multiplication, create a new variable, the initial value is 1, and then loop multiply by 2. As long as the variable is less than n, finally judge whether the variable and n are equal.</p>]]></content>
     
