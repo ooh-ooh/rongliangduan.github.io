@@ -1,0 +1,288 @@
+<!DOCTYPE html><html lang="EN, zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Android 权限 · Avalond 的个人博客</title><meta name="description" content="Android 权限 - Avalond"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/logo.jpg"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://yoursite.com/atom.xml" title="Avalond 的个人博客"><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Avalond 的个人博客" type="application/atom+xml">
+</head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/logo.jpg" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://github.com/rongliangduan" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">Android 权限</h1><div class="post-info">Nov 27, 2015</div><div class="post-content"><h2 id="程序执行需要读取到安全敏感项必需在androidmanifest-xml中声明相关权限请求-完整列表如下"><a href="#程序执行需要读取到安全敏感项必需在androidmanifest-xml中声明相关权限请求-完整列表如下" class="headerlink" title="程序执行需要读取到安全敏感项必需在androidmanifest.xml中声明相关权限请求, 完整列表如下:"></a>程序执行需要读取到安全敏感项必需在androidmanifest.xml中声明相关权限请求, 完整列表如下:</h2><p>允许读写访问”properties”表在checkin数据库中，改值可以修改上传( Allows read/write access to the “properties” table in the checkin database, to change values that get uploaded)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.ACCESS_CHECKIN_PROPERTIES</span><br></pre></td></tr></table></figure>
+
+<p>允许一个程序访问CellID或WiFi热点来获取粗略的位置(Allows an application to access coarse (e.g., Cell-ID, WiFi) location)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.ACCESS_COARSE_LOCATION</span><br></pre></td></tr></table></figure>
+
+<p>允许一个程序访问精良位置(如GPS) (Allows an application to access fine (e.g., GPS) location)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.ACCESS_FINE_LOCATION</span><br></pre></td></tr></table></figure>
+
+<p>允许应用程序访问额外的位置提供命令(Allows an application to access extra location provider commands)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.ACCESS_LOCATION_EXTRA_COMMANDS</span><br></pre></td></tr></table></figure>
+
+<p>允许程序创建模拟位置提供用于测试(Allows an application to create mock location providers for testing)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.ACCESS_MOCK_LOCATION</span><br></pre></td></tr></table></figure>
+
+<p>允许程序访问有关GSM网络信息(Allows applications to access information about networks)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.ACCESS_NETWORK_STATE</span><br></pre></td></tr></table></figure>
+
+<p>允许程序使用SurfaceFlinger底层特性(Allows an application to use SurfaceFlinger’s low level features)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.ACCESS_SURFACE_FLINGER</span><br></pre></td></tr></table></figure>
+
+<p>允许程序访问Wi-Fi网络状态信息(Allows applications to access information about Wi-Fi networks)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.ACCESS_WIFI_STATE</span><br></pre></td></tr></table></figure>
+
+<p>允许程序发布系统级服务(Allows an application to publish system-level services)   </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.ADD_SYSTEM_SERVICE </span><br></pre></td></tr></table></figure>
+
+<p>允许程序更新手机电池统计信息(Allows an application to update the collected battery statistics)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.BATTERY_STATS</span><br></pre></td></tr></table></figure>
+
+<p>允许程序连接到已配对的蓝牙设备(Allows applications to connect to paired bluetooth devices)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.BLUETOOTH</span><br></pre></td></tr></table></figure>
+
+
+<p>允许程序发现和配对蓝牙设备(Allows applications to discover and pair bluetooth devices)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.BLUETOOTH_ADMIN</span><br></pre></td></tr></table></figure>
+
+<p>请求能够禁用设备(Required to be able to disable the device (very *erous!))  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.BRICK</span><br></pre></td></tr></table></figure>
+
+<p>允许程序广播一个提示消息在一个应用程序包已经移除(Allows an application to broadcast a notification that an application package has been removed)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.BROADCAST_PACKAGE_REMOVED</span><br></pre></td></tr></table></figure>
+
+<p>允许一个程序广播常用intents(Allows an application to broadcast sticky intents)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.BROADCAST_STICKY</span><br></pre></td></tr></table></figure>
+
+<p>允许一个程序初始化一个电话拨号不需通过拨号用户界面需要用户确认(Allows an application to initiate a phone call without going through the Dialer user interface for the user to confirm the call being placed.)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.CALL_PHONE</span><br></pre></td></tr></table></figure>
+
+<p>允许一个程序拨打任何号码，包含紧急号码无需通过拨号用户界面需要用户确认(Allows an application to call any phone number, including emergency numbers, without going through the Dialer user interface for the user to confirm the call being placed)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.CALL_PRIVILEGED</span><br></pre></td></tr></table></figure>
+
+<p>请求访问使用照相设备(Required to be able to access the camera device. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.CAMERA</span><br></pre></td></tr></table></figure>
+
+<p>允许一个程序是否改变一个组件或其他的启用或禁用(Allows an application to change whether an application component (other than its own) is enabled or not.)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.CHANGE_COMPONENT_ENABLED_STATE</span><br></pre></td></tr></table></figure>
+
+<p>允许一个程序修改当前设置，如本地化(Allows an application to modify the current configuration, such as locale. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.CHANGE_CONFIGURATION</span><br></pre></td></tr></table></figure>
+
+<p>允许程序改变网络连接状态(Allows applications to change network connectivity state)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.CHANGE_NETWORK_STATE</span><br></pre></td></tr></table></figure>
+
+<p>允许程序改变Wi-Fi连接状态(Allows applications to change Wi-Fi connectivity state)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.CHANGE_WIFI_STATE</span><br></pre></td></tr></table></figure>
+
+<p>允许一个程序清楚缓存从所有安装的程序在设备中(Allows an application to clear the caches of all installed applications on the device. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.CLEAR_APP_CACHE</span><br></pre></td></tr></table></figure>
+
+<p>允许一个程序清除用户设置(Allows an application to clear user data)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.CLEAR_APP_USER_DATA</span><br></pre></td></tr></table></figure>
+
+<p>允许启用禁止位置更新提示从无线模块(Allows enabling/disabling location update notifications from the radio. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.CONTROL_LOCATION_UPDATES</span><br></pre></td></tr></table></figure>
+
+<p>允许程序删除缓存文件(Allows an application to delete cache files)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.DELETE_CACHE_FILES</span><br></pre></td></tr></table></figure>
+
+<p>允许一个程序删除包(Allows an application to delete packages)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.DELETE_PACKAGES</span><br></pre></td></tr></table></figure>
+
+<p>允许访问底层电源管理(Allows low-level access to power management)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.DEVICE_POWER</span><br></pre></td></tr></table></figure>
+
+<p>允许程序RW诊断资源(Allows applications to RW to diagnostic resources. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.DIAGNOSTIC</span><br></pre></td></tr></table></figure>
+
+<p>允许程序禁用键盘锁(Allows applications to disable the keyguard )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.DISABLE_KEYGUARD</span><br></pre></td></tr></table></figure>
+
+<p>允许程序返回状态抓取信息从系统服务(Allows an application to retrieve state dump information from system services.)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.DUMP</span><br></pre></td></tr></table></figure>
+
+<p>允许一个程序扩展收缩在状态栏,android开发网提示应该是一个类似Windows Mobile中的托盘程序(Allows an application to expand or collapse the status bar. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.EXPAND_STATUS_BAR</span><br></pre></td></tr></table></figure>
+
+<p>作为一个工厂测试程序，运行在root用户(Run as a manufacturer test application, running as the root user. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.FACTORY_TEST</span><br></pre></td></tr></table></figure>
+
+<p>访问闪光灯,android开发网提示HTC Dream不包含闪光灯(Allows access to the flashlight )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.FLASHLIGHT</span><br></pre></td></tr></table></figure>
+
+<p>允许程序强行一个后退操作是否在顶层activities(Allows an application to force a BACK operation on whatever is the top activity. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.FORCE_BACK</span><br></pre></td></tr></table></figure>
+
+<p>android预留权限.我是这样认为的  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.FOTA_UPDATE</span><br></pre></td></tr></table></figure>
+
+<p>访问一个帐户列表在Accounts Service中(Allows access to the list of accounts in the Accounts Service)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.GET_ACCOUNTS</span><br></pre></td></tr></table></figure>
+
+<p>允许一个程序获取任何package占用空间容量(Allows an application to find out the space used by any package. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.GET_PACKAGE_SIZE</span><br></pre></td></tr></table></figure>
+
+<p>允许一个程序获取信息有关当前或最近运行的任务，一个缩略的任务状态，是否活动等等(Allows an application to get information about the currently or recently running tasks: a thumbnail representation of the tasks, what activities are running in it, etc.)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.GET_TASKS</span><br></pre></td></tr></table></figure>
+
+<p>允许访问硬件(Allows access to hardware peripherals. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.HARDWARE_TEST</span><br></pre></td></tr></table></figure>
+
+<p>允许一个程序截获用户事件如按键、触摸、轨迹球等等到一个时间流，android 开发网提醒算是hook技术吧(Allows an application to inject user events (keys, touch, trackball) into the event stream and deliver them to ANY window.)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.INJECT_EVENTS</span><br></pre></td></tr></table></figure>
+
+<p>允许一个程序安装packages(Allows an application to install packages. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.INSTALL_PACKAGES</span><br></pre></td></tr></table></figure>
+
+<p>允许打开窗口使用系统用户界面(Allows an application to open windows that are for use by parts of the system user interface. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.INTERNAL_SYSTEM_WINDOW</span><br></pre></td></tr></table></figure>
+
+<p>允许程序打开网络套接字(Allows applications to open network sockets)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.INTERNET</span><br></pre></td></tr></table></figure>
+
+<p>允许程序管理(创建、催后、 z- order默认向z轴推移)程序引用在窗口管理器中(Allows an application to manage (create, destroy, Z-order) application tokens in the window manager. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.MANAGE_APP_TOKENS</span><br></pre></td></tr></table></figure>
+
+<p>清除一切数据，硬格机  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.MASTER_CLEAR</span><br></pre></td></tr></table></figure>
+
+<p>允许程序修改全局音频设置(Allows an application to modify global audio settings)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.MODIFY_AUDIO_SETTINGS</span><br></pre></td></tr></table></figure>
+
+<p>允许修改话机状态，如电源，人机接口等(Allows modification of the telephony state – power on, mmi, etc. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.MODIFY_PHONE_STATE</span><br></pre></td></tr></table></figure>
+
+<p>允许挂载和反挂载文件系统可移动存储(Allows mounting and unmounting file systems for removable storage. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.MOUNT_UNMOUNT_FILESYSTEMS</span><br></pre></td></tr></table></figure>
+
+<p>允许一个程序设置他的activities显示(Allow an application to make its activities persistent. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.PERSISTENT_ACTIVITY</span><br></pre></td></tr></table></figure>
+
+<p>允许程序监视、修改有关播出电话(Allows an application to monitor, modify, or abort outgoing calls)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.PROCESS_OUTGOING_CALLS</span><br></pre></td></tr></table></figure>
+
+<p>允许程序读取用户日历数据(Allows an application to read the user’s calendar data.)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.READ_CALENDAR</span><br></pre></td></tr></table></figure>
+
+<p>允许程序读取用户联系人数据(Allows an application to read the user’s contacts data.)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.READ_CONTACTS</span><br></pre></td></tr></table></figure>
+
+<p>允许程序屏幕波或和更多常规的访问帧缓冲数据(Allows an application to take screen shots and more generally get access to the frame buffer data)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.READ_FRAME_BUFFER</span><br></pre></td></tr></table></figure>
+
+<p>允许程序返回当前按键状态(Allows an application to retrieve the current state of keys and switches. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.READ_INPUT_STATE</span><br></pre></td></tr></table></figure>
+
+<p>允许程序读取底层系统日志文件(Allows an application to read the low-level system log files. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.READ_LOGS</span><br></pre></td></tr></table></figure>
+
+<p>允许程序读取所有者数据(Allows an application to read the owner’s data)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.READ_OWNER_DATA</span><br></pre></td></tr></table></figure>
+
+<p>允许程序读取短信息(Allows an application to read SMS messages.)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.READ_SMS</span><br></pre></td></tr></table></figure>
+
+<p>允许程序读取同步设置(Allows applications to read the sync settings)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.READ_SYNC_SETTINGS</span><br></pre></td></tr></table></figure>
+
+<p>允许程序读取同步状态(Allows applications to read the sync stats)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.READ_SYNC_STATS</span><br></pre></td></tr></table></figure>
+
+<p>请求能够重新启动设备(Required to be able to reboot the device. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.REBOOT</span><br></pre></td></tr></table></figure>
+
+<p>允许一个程序接收到 ACTION_BOOT_COMPLETED广播在系统完成启动(Allows an application to receive the ACTION_BOOT_COMPLETED that is broadcast after the system finishes booting. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.RECEIVE_BOOT_COMPLETED</span><br></pre></td></tr></table></figure>
+
+<p>允许一个程序监控将收到MMS彩信,记录或处理(Allows an application to monitor incoming MMS messages, to record or perform processing on them. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.RECEIVE_MMS</span><br></pre></td></tr></table></figure>
+
+<p>允许程序监控一个将收到短信息，记录或处理(Allows an application to monitor incoming SMS messages, to record or perform processing on them.)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.RECEIVE_SMS</span><br></pre></td></tr></table></figure>
+
+<p>允许程序监控将收到WAP PUSH信息(Allows an application to monitor incoming WAP push messages. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.RECEIVE_WAP_PUSH</span><br></pre></td></tr></table></figure>
+
+<p>允许程序录制音频(Allows an application to record audio)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.RECORD_AUDIO</span><br></pre></td></tr></table></figure>
+
+<p>允许程序改变Z轴排列任务(Allows an application to change the Z-order of tasks)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.REORDER_TASKS</span><br></pre></td></tr></table></figure>
+
+<p>允许程序重新启动其他程序(Allows an application to restart other applications)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.RESTART_PACKAGES</span><br></pre></td></tr></table></figure>
+
+<p>允许程序发送SMS短信(Allows an application to send SMS messages)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.SEND_SMS</span><br></pre></td></tr></table></figure>
+
+<p>允许程序监控或控制activities已经启动全局系统中Allows an application to watch and control how activities are started globally in the system.  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.SET_ACTIVITY_WATCHER</span><br></pre></td></tr></table></figure>
+
+<p>允许程序控制是否活动间接完成在处于后台时Allows an application to control whether activities are immediately finished when put in the background.  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.SET_ALWAYS_FINISH</span><br></pre></td></tr></table></figure>
+
+<p>修改全局信息比例(Modify the global animation scaling factor.)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.SET_ANIMATION_SCALE</span><br></pre></td></tr></table></figure>
+
+<p>配置一个程序用于调试(Configure an application for debugging.)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.SET_DEBUG_APP</span><br></pre></td></tr></table></figure>
+
+<p>允许底层访问设置屏幕方向和实际旋转(Allows low-level access to setting the orientation (actually rotation) of the screen.)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.SET_ORIENTATION</span><br></pre></td></tr></table></figure>
+
+<p>允许一个程序修改列表参数PackageManager.addPackageToPreferred() 和PackageManager.removePackageFromPreferred()方法(Allows an application to modify the list of preferred applications with the PackageManager.addPackageToPreferred() and PackageManager.removePackageFromPreferred() methods.)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.SET_PREFERRED_APPLICATIONS</span><br></pre></td></tr></table></figure>
+
+<p>允许程序当前运行程序强行到前台(Allows an application to force any currently running process to be in the foreground.)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.SET_PROCESS_FOREGROUND</span><br></pre></td></tr></table></figure>
+
+<p>允许设置最大的运行进程数量(Allows an application to set the maximum number of (not needed) application processes that can be running. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.SET_PROCESS_LIMIT</span><br></pre></td></tr></table></figure>
+
+<p>允许程序设置时间区域(Allows applications to set the system time zone)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.SET_TIME_ZONE</span><br></pre></td></tr></table></figure>
+
+<p>允许程序设置壁纸(Allows applications to set the wallpaper )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.SET_WALLPAPER</span><br></pre></td></tr></table></figure>
+
+<p>允许程序设置壁纸hits(Allows applications to set the wallpaper hints)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.SET_WALLPAPER_HINTS</span><br></pre></td></tr></table></figure>
+
+<p>允许程序请求发送信号到所有显示的进程中(Allow an application to request that a signal be sent to all persistent processes)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.SIGNAL_PERSISTENT_PROCESSES</span><br></pre></td></tr></table></figure>
+
+<p>允许程序打开、关闭或禁用状态栏及图标Allows an application to open, close, or disable the status bar and its icons.  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.STATUS_BAR</span><br></pre></td></tr></table></figure>
+
+<p>允许一个程序访问订阅RSS Feed内容提供(Allows an application to allow access the subscribed feeds ContentProvider. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.SUBSCRIBED_FEEDS_READ</span><br></pre></td></tr></table></figure>
+
+<p>系统保留改设置</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.SUBSCRIBED_FEEDS_WRITE</span><br></pre></td></tr></table></figure>
+
+<p>允许一个程序打开窗口使用 TYPE_SYSTEM_ALERT，显示在其他所有程序的顶层(Allows an application to open windows using the type TYPE_SYSTEM_ALERT, shown on top of all other applications. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.SYSTEM_ALERT_WINDOW</span><br></pre></td></tr></table></figure>
+
+<p>允许访问振动设备(Allows access to the vibrator)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.VIBRATE</span><br></pre></td></tr></table></figure>
+
+<p>允许使用PowerManager的 WakeLocks保持进程在休眠时从屏幕消失( Allows using PowerManager WakeLocks to keep processor from sleeping or screen from dimming)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.WAKE_LOCK </span><br></pre></td></tr></table></figure>
+
+<p>允许程序写入API设置(Allows applications to write the apn settings)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.WRITE_APN_SETTINGS</span><br></pre></td></tr></table></figure>
+
+<p>允许一个程序写入但不读取用户日历数据(Allows an application to write (but not read) the user’s calendar data. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.WRITE_CALENDAR</span><br></pre></td></tr></table></figure>
+
+<p>允许程序写入但不读取用户联系人数据(Allows an application to write (but not read) the user’s contacts data. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.WRITE_CONTACTS</span><br></pre></td></tr></table></figure>
+
+<p>允许程序修改Google服务地图(Allows an application to modify the Google service map. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.WRITE_GSERVICES</span><br></pre></td></tr></table></figure>
+
+<p>允许一个程序写入但不读取所有者数据(Allows an application to write (but not read) the owner’s data.)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.WRITE_OWNER_DATA</span><br></pre></td></tr></table></figure>
+
+<p>允许程序读取或写入系统设置(Allows an application to read or write the system settings. )  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.WRITE_SETTINGS</span><br></pre></td></tr></table></figure>
+
+<p>允许程序写短信(Allows an application to write SMS messages)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.WRITE_SMS</span><br></pre></td></tr></table></figure>
+
+<p>允许程序写入同步设置(Allows applications to write the sync settings)  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.permission.WRITE_SYNC_SETTINGS</span><br></pre></td></tr></table></figure>
+
+</div></article></div></main><footer><div class="paginator"><a href="/2015/11/28/go/" class="prev">Prev</a><a href="/2015/11/22/node-forever/" class="next">Next</a></div><div class="copyright"><p>© 2015 - 2021 <a href="http://yoursite.com">Avalond</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-70285079-2",'auto');ga('send','pageview');</script></body></html>

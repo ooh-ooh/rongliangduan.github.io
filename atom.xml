@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Avalond 的个人博客</title>
+  
+  
+  <link href="http://yoursite.com/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2021-12-21T03:45:39.098Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Avalond</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>231. Power of Two</title>
+    <link href="http://yoursite.com/2021/12/21/leetcode_231_power_of_two/"/>
+    <id>http://yoursite.com/2021/12/21/leetcode_231_power_of_two/</id>
+    <published>2021-12-20T16:00:00.000Z</published>
+    <updated>2021-12-21T03:45:39.098Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isPowerOfTwo</span>(<span class="params">n: <span class="built_in">number</span></span>): <span class="title">boolean</span> </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> m=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(m&lt;n)&#123;</span><br><span class="line">          m=m*<span class="number">2</span></span><br><span class="line">          &#125;</span><br><span class="line">    <span class="keyword">return</span> m==n</span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>This solution is to do multiplication, create a new variable, the initial value is 1, and then loop multiply by 2. As long as the variable is less than n, finally judge whether the variable and n are equal.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight ts&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</summary>
+      
+    
+    
+    
+    <category term="LeetCode" scheme="http://yoursite.com/categories/LeetCode/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Graphql</title>
+    <link href="http://yoursite.com/2021/03/29/graphql/"/>
+    <id>http://yoursite.com/2021/03/29/graphql/</id>
+    <published>2021-03-28T16:00:00.000Z</published>
+    <updated>2021-12-21T03:40:27.205Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Graphql"><a href="#Graphql" class="headerlink" title="Graphql"></a>Graphql</h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Graphql&quot;&gt;&lt;a href=&quot;#Graphql&quot; class=&quot;headerlink&quot; title=&quot;Graphql&quot;&gt;&lt;/a&gt;Graphql&lt;/h2&gt;</summary>
+      
+    
+    
+    
+    <category term="Microservice" scheme="http://yoursite.com/categories/Microservice/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Serverless</title>
+    <link href="http://yoursite.com/2021/03/29/serverless/"/>
+    <id>http://yoursite.com/2021/03/29/serverless/</id>
+    <published>2021-03-28T16:00:00.000Z</published>
+    <updated>2021-12-21T03:40:27.207Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Serverless"><a href="#Serverless" class="headerlink" title="Serverless"></a>Serverless</h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Serverless&quot;&gt;&lt;a href=&quot;#Serverless&quot; class=&quot;headerlink&quot; title=&quot;Serverless&quot;&gt;&lt;/a&gt;Serverless&lt;/h2&gt;</summary>
+      
+    
+    
+    
+    <category term="Microservice" scheme="http://yoursite.com/categories/Microservice/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Docker 常用命令</title>
+    <link href="http://yoursite.com/2017/12/28/docker_commend/"/>
+    <id>http://yoursite.com/2017/12/28/docker_commend/</id>
+    <published>2017-12-27T16:00:00.000Z</published>
+    <updated>2021-12-21T03:40:27.204Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="查看版本"><a href="#查看版本" class="headerlink" title="查看版本"></a>查看版本</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">docker --version <span class="comment">#查看版本</span></span><br><span class="line">docker-compose --version <span class="comment">#查看版本</span></span><br><span class="line">docker-machine --version <span class="comment">#查看版本</span></span><br><span class="line">docker version <span class="comment">#查看client和server端版本，并可以查看是否开启体验功能   </span></span><br></pre></td></tr></table></figure><h2 id="检查"><a href="#检查" class="headerlink" title="检查"></a>检查</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">docker ps <span class="comment"># 查看当前正在运行的image实例</span></span><br><span class="line">docker ps -a <span class="comment">#查看所有镜像实例</span></span><br><span class="line">docker run hello-world <span class="comment">#验证docker是否在运行中</span></span><br><span class="line">docker inspect &lt;task or container&gt;   检查任务或容器</span><br></pre></td></tr></table></figure><h2 id="镜像操作"><a href="#镜像操作" class="headerlink" title="镜像操作"></a>镜像操作</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">docker build -t &lt;image-name&gt; . <span class="comment">#使用当前目录下的Dockerfile构建镜像</span></span><br><span class="line">docker images <span class="comment">#查看镜像</span></span><br><span class="line">docker image ls -a  显示机器上所有的镜像</span><br><span class="line">docker image rm &lt;image id&gt;      删除指定的镜像</span><br><span class="line">docker image rm $(docker image ls -a -q)  删除所有的镜像</span><br><span class="line">docker rmi [image-id/image-name] <span class="comment">#删除指定的镜像，如docker rmi nginx</span></span><br><span class="line">docker tag &lt;image&gt; &lt;username&gt;/&lt;repository&gt;:&lt;tag&gt; <span class="comment">#为自定义的镜像打上tag。如：$docker tag hellopython followtry/demo:latest</span></span><br><span class="line">docker push &lt;username&gt;/&lt;repository&gt;:&lt;tag&gt; <span class="comment">#将自定义的镜像发布到仓库。如：docker push followtry/demo:latest  </span></span><br><span class="line">    上传后访问地址：Docker 仓库</span><br><span class="line">docker pull &lt;username&gt;/&lt;repository&gt; <span class="comment">#pull自定义的上传上去的镜像。如：$docker pull followtry/demo</span></span><br><span class="line">docker run username/repository:tag <span class="comment">#运行仓库的镜像</span></span><br></pre></td></tr></table></figure><h2 id="容器操作"><a href="#容器操作" class="headerlink" title="容器操作"></a>容器操作</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">docker container ls <span class="comment">#列出所有运行中的容器</span></span><br><span class="line">docker container ls -a <span class="comment">#列出所有容器，包括未运行的</span></span><br><span class="line">docker container ls -q     <span class="comment">#只列出运行的容器的id集合</span></span><br><span class="line">docker container stop &lt;<span class="built_in">hash</span>&gt;  <span class="comment"># 优雅停用指定的容器</span></span><br><span class="line">docker container <span class="built_in">kill</span> &lt;<span class="built_in">hash</span>&gt;  <span class="comment">#强制关闭指定的容器</span></span><br><span class="line">docker container rm &lt;<span class="built_in">hash</span>&gt;    <span class="comment">#删除指定的容器</span></span><br><span class="line">docker container rm $(docker container ls -a -q)  <span class="comment">#删除所有的容器</span></span><br><span class="line">docker run -d -p 8080:80 --name webserver nginx <span class="comment"># 运行nginx镜像实例，-d：后台，-p:绑定端口8080到docker的80</span></span><br><span class="line">docker stop &lt;containerid/container-name&gt; <span class="comment">#停止容器webserver</span></span><br><span class="line">docker start &lt;containerid/container-name&gt; <span class="comment">#启动容器webserver</span></span><br><span class="line">docker port &lt;containerid/container-name&gt; <span class="comment">#查看指定容器的端口映射</span></span><br><span class="line">docker logs -f &lt;containerid/container-name&gt; <span class="comment">#查看指定容器的日志</span></span><br><span class="line">docker top &lt;containerid/container-name&gt;  <span class="comment">#查看容器的进程</span></span><br><span class="line">docker inspect &lt;containerid/container-name&gt; <span class="comment">#检查容器的底层信息</span></span><br><span class="line">docker rm &lt;containerid/container-name&gt; <span class="comment">#</span></span><br></pre></td></tr></table></figure><h2 id="用户和组"><a href="#用户和组" class="headerlink" title="用户和组"></a>用户和组</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker login <span class="comment">#登录</span></span><br></pre></td></tr></table></figure><h2 id="service指令"><a href="#service指令" class="headerlink" title="service指令"></a>service指令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker service ls  <span class="comment">#列出与应用关联的所有运行的service</span></span><br><span class="line">docker service ps &lt;service&gt;  <span class="comment">#列出和应用关联的所有任务</span></span><br></pre></td></tr></table></figure><h2 id="stack指令"><a href="#stack指令" class="headerlink" title="stack指令"></a>stack指令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">docker stack ls  <span class="comment">#列出stack或app列表</span></span><br><span class="line">docker stack deploy -c &lt;composefile&gt; &lt;appname&gt;  <span class="comment"># 运行指定的compose文件</span></span><br><span class="line">docker stack rm &lt;appname&gt;  <span class="comment">#删除一个或多个stack</span></span><br><span class="line">docker stack services &lt;stack1&gt;<span class="comment">#列出stack1中的服务</span></span><br></pre></td></tr></table></figure><p>##swarm指令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">docker swarm ca  <span class="comment">#显示root的ca</span></span><br><span class="line">docker swarm init <span class="comment">#swarm初始化</span></span><br><span class="line">docker swarm join --token SWMTKN-1-1qazipp4hbndidnfzsm8psks33tdgvvcgn0ids6uv41u68w9f8-aq1lw7di2g4wx6buypra1j6qz 192.168.65.2:2377 <span class="comment">#执行该命令，将当前节点添加到swarm中管理</span></span><br><span class="line">docker swarm join-token [OPTIONS] (worker|manager) <span class="comment">#管理允许加入的token</span></span><br><span class="line">docker swarm leave --force  <span class="comment">#从管理器中强制移除单个swarm节点</span></span><br><span class="line">docker swarm unlock-key <span class="comment">#swarm集群的解锁key</span></span><br><span class="line">docker swarm unlock <span class="comment">#解锁集群,key=SWMKEY-1-8jKcZ7SJb2+aHibYuJ1RevmuEAtbx8q0LY+crOx+QRU</span></span><br><span class="line">docker swarm update   <span class="comment">#更新swarm,内有自动lock，cert过期周期，分发心跳周期，历史任务限制等功能</span></span><br></pre></td></tr></table></figure><p>##node指令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">docker node demote &lt;NODEID/HOSTNAME&gt; <span class="comment">#对NODEID进行降级</span></span><br><span class="line">docker node inspect &lt;NODEID/HOSTNAME&gt; <span class="comment">#节点NODEID的详细信息</span></span><br><span class="line">docker node ls <span class="comment">#列出节点列表</span></span><br><span class="line">docker node promote node | ... <span class="comment">#提升一到多个节点为swarm的管理者</span></span><br><span class="line">docker node ps <span class="comment">#列出节点上正在运行的任务，默认是当前节点</span></span><br><span class="line">docker node rm node | ... <span class="comment">#swarm中移除一个或多个节点</span></span><br><span class="line">docker node update &lt;NODEID/HOSTNAME&gt; <span class="comment">#更新指定节点</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;查看版本&quot;&gt;&lt;a href=&quot;#查看版本&quot; class=&quot;headerlink&quot; title=&quot;查看版本&quot;&gt;&lt;/a&gt;查看版本&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre</summary>
+      
+    
+    
+    
+    <category term="Docker" scheme="http://yoursite.com/categories/Docker/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ubuntu install skype</title>
+    <link href="http://yoursite.com/2017/07/11/ubuntu_install_skype/"/>
+    <id>http://yoursite.com/2017/07/11/ubuntu_install_skype/</id>
+    <published>2017-07-10T16:00:00.000Z</published>
+    <updated>2021-12-21T03:40:27.207Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># make sure you have &#x27;apt-transport-https&#x27; installed</span></span><br><span class="line">dpkg -s apt-transport-https &gt; /dev/null || bash -c <span class="string">&quot;sudo apt-get update; sudo apt-get install apt-transport-https -y&quot;</span></span><br><span class="line">curl https://repo.skype.com/data/SKYPE-GPG-KEY | sudo apt-key add -</span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;deb [arch=amd64] https://repo.skype.com/deb stable main&quot;</span> | sudo tee /etc/apt/sources.list.d/skype-stable.list</span><br><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install skypeforlinux -y</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=</summary>
+      
+    
+    
+    
+    <category term="linux" scheme="http://yoursite.com/categories/linux/"/>
+    
+    
+    <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>new ubuntu android studio can&#39;t crate avd</title>
+    <link href="http://yoursite.com/2017/05/07/new_ubuntu_can&#39;t_create_avd/"/>
+    <id>http://yoursite.com/2017/05/07/new_ubuntu_can&#39;t_create_avd/</id>
+    <published>2017-05-06T16:00:00.000Z</published>
+    <updated>2021-12-21T03:40:27.206Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install libc6-i386</span><br><span class="line">sudo apt-get install lib32stdc++6</span><br><span class="line">sudo apt-get install lib32z1</span><br><span class="line">sudo apt-get install lib32ncurses5</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=</summary>
+      
+    
+    
+    
+    <category term="ubuntu" scheme="http://yoursite.com/categories/ubuntu/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>mac install mtr</title>
+    <link href="http://yoursite.com/2017/04/30/mac_install_mtr/"/>
+    <id>http://yoursite.com/2017/04/30/mac_install_mtr/</id>
+    <published>2017-04-29T16:00:00.000Z</published>
+    <updated>2021-12-21T03:40:27.206Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li>if have this error mtr says “mtr: unable to get raw sockets” ,do this<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo chown root:wheel /usr/<span class="built_in">local</span>/Cellar/mtr/xxx/sbin/mtr</span><br><span class="line">sudo chmod u+s /usr/<span class="built_in">local</span>/Cellar/mtr/xxx/sbin/mtr</span><br></pre></td></tr></table></figure>tips: xxx is you mtr version</li></ol><p>2.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-bash: mtr: <span class="built_in">command</span> not found</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">alias</span> mtr=/usr/<span class="built_in">local</span>/sbin/mtr</span><br></pre></td></tr></table></figure><p>3.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mtr: unable to get raw sockets.</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo chown root mtr</span><br><span class="line">sudo chmod u+s mtr</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;if have this error mtr says “mtr: unable to get raw sockets” ,do this&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;</summary>
+      
+    
+    
+    
+    <category term="Mac" scheme="http://yoursite.com/categories/Mac/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Android studio tips</title>
+    <link href="http://yoursite.com/2017/01/22/android-studio-tips/"/>
+    <id>http://yoursite.com/2017/01/22/android-studio-tips/</id>
+    <published>2017-01-21T16:00:00.000Z</published>
+    <updated>2021-12-21T03:40:27.204Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li>issue one</li></ol><p>if start android studio have this issue</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">The current inotify(7) watch <span class="built_in">limit</span> is too low. More details.</span><br></pre></td></tr></table></figure><p>1.1</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/sysctl.conf</span><br><span class="line"></span><br><span class="line"><span class="comment">### add this</span></span><br><span class="line">fs.inotify.max_user_watches = 524288</span><br><span class="line"></span><br><span class="line"><span class="comment">### restart sysctl</span></span><br><span class="line"></span><br><span class="line">sudo sysctl -p</span><br><span class="line"></span><br><span class="line"><span class="comment">### restart android studio</span></span><br><span class="line"><span class="comment">### only in linux</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;issue one&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;if start android studio have this issue&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;p</summary>
+      
+    
+    
+    
+    <category term="Android studio" scheme="http://yoursite.com/categories/Android-studio/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Elasticsearch install error fix</title>
+    <link href="http://yoursite.com/2017/01/06/elasticseach_install/"/>
+    <id>http://yoursite.com/2017/01/06/elasticseach_install/</id>
+    <published>2017-01-05T16:00:00.000Z</published>
+    <updated>2021-12-21T03:40:27.205Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">unable to install syscall filter:</span><br><span class="line">java.lang.UnsupportedOperationException: seccomp unavailable: requires kernel 3.5+ with CONFIG_SECCOMP and CONFIG_SECCOMP_FILTER compiled <span class="keyword">in</span></span><br><span class="line">at org.elasticsearch.bootstrap.Seccomp.linuxImpl(Seccomp.java:349) ~[elasticsearch-5.0.0.jar:5.0.0]</span><br><span class="line">at org.elasticsearch.bootstrap.Seccomp.init(Seccomp.java:630) ~[elasticsearch-5.0.0.jar:5.0.0]</span><br><span class="line"></span><br><span class="line"><span class="comment">#### upgrade you linux</span></span><br></pre></td></tr></table></figure><p>2.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">    ERROR: bootstrap checks failed</span><br><span class="line"></span><br><span class="line">    max file descriptors [4096] <span class="keyword">for</span> elasticsearch process likely too low, increase to at least [65536]</span><br><span class="line">    max number of threads [1024] <span class="keyword">for</span> user [lishang] likely too low, increase to at least [2048]</span><br><span class="line"></span><br><span class="line">sudo vi /etc/security/limits.conf</span><br><span class="line"></span><br><span class="line"><span class="comment">#add this</span></span><br><span class="line">* soft nofile 65536</span><br><span class="line">* hard nofile 131072</span><br><span class="line">* soft nproc 2048</span><br><span class="line">* hard nproc 4096</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>3.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">max number of threads [1024] <span class="keyword">for</span> user [lish] likely too low, increase to at least [2048]</span><br><span class="line"></span><br><span class="line">sudo vi /etc/security/limits.d/90-nproc.conf</span><br><span class="line"></span><br><span class="line"><span class="comment">#default</span></span><br><span class="line">* soft nproc 1024</span><br><span class="line"></span><br><span class="line"><span class="comment">#change</span></span><br><span class="line">* soft nproc 2048</span><br></pre></td></tr></table></figure><p>4.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">max virtual memory areas vm.max_map_count [65530] likely too low, increase to at least [262144]</span><br><span class="line"></span><br><span class="line">sudo vi /etc/sysctl.conf</span><br><span class="line"></span><br><span class="line"><span class="comment">#add this</span></span><br><span class="line">vm.max_map_count=655360</span><br><span class="line"></span><br><span class="line"><span class="comment">### take this effective</span></span><br><span class="line">sysctl -p</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;1.&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;s</summary>
+      
+    
+    
+    
+    <category term="other" scheme="http://yoursite.com/categories/other/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>choose jdk or openjdk</title>
+    <link href="http://yoursite.com/2017/01/04/choose_jdk_or_openjdk/"/>
+    <id>http://yoursite.com/2017/01/04/choose_jdk_or_openjdk/</id>
+    <published>2017-01-03T16:00:00.000Z</published>
+    <updated>2021-12-21T03:40:27.204Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/profile</span><br></pre></td></tr></table></figure></li><li><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#for java</span></span><br><span class="line"><span class="built_in">export</span> JAVA_HOME=/opt/jdk</span><br><span class="line"><span class="built_in">export</span> JRE_HOME=<span class="variable">$&#123;JAVA_HOME&#125;</span>/jre</span><br><span class="line"><span class="built_in">export</span> CLASSPATH=.:<span class="variable">$&#123;JAVA_HOME&#125;</span>/lib:<span class="variable">$&#123;JRE_HOME&#125;</span>/lib</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$&#123;JAVA_HOME&#125;</span>/bin:<span class="variable">$&#123;JRE_HOME&#125;</span>/bin <span class="comment">## (1)will change this line in 3 will show </span></span><br></pre></td></tr></table></figure></li><li><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> /etc/profile</span><br></pre></td></tr></table></figure></li><li>1<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## no different jdk the (1) like this </span></span><br><span class="line">  PATH=<span class="variable">$&#123;JAVA_HOME&#125;</span>/bin:<span class="variable">$&#123;JRE_HOME&#125;</span>/bin:<span class="variable">$PATH</span></span><br></pre></td></tr></table></figure></li><li>2 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## have different jdk the (1) like this </span></span><br><span class="line">  <span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$&#123;JAVA_HOME&#125;</span>/bin:<span class="variable">$&#123;JRE_HOME&#125;</span>/bin</span><br><span class="line">  </span><br><span class="line"><span class="comment">## then do it </span></span><br><span class="line">   sudo update-alternatives --install /usr/bin/javah javah /opt/jdk/bin/javah 255</span><br><span class="line">   sudo update-alternatives --install /usr/bin/javac javac /opt/jdk/bin/javac 255</span><br><span class="line">   sudo update-alternatives --install /usr/bin/java java /opt/jdk/bin/java 255</span><br><span class="line">   sudo update-alternatives --install /usr/bin/jar jar /opt/jdk/bin/jar 255   </span><br></pre></td></tr></table></figure></li><li><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## install other jdk </span></span><br><span class="line">   sudo apt-get install openjdk-8-jdk</span><br></pre></td></tr></table></figure></li><li><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## do it </span></span><br><span class="line"></span><br><span class="line"><span class="comment">###</span></span><br><span class="line"> sudo update-alternatives ––config java</span><br><span class="line"> sudo update-alternatives ––config javac</span><br><span class="line"> sudo update-alternatives ––config javah</span><br><span class="line"> sudo update-alternatives ––config jar</span><br></pre></td></tr></table></figure></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;</summary>
+      
+    
+    
+    
+    <category term="other" scheme="http://yoursite.com/categories/other/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ubuntu create PAC use gwflist</title>
+    <link href="http://yoursite.com/2016/12/10/create_pac/"/>
+    <id>http://yoursite.com/2016/12/10/create_pac/</id>
+    <published>2016-12-09T16:00:00.000Z</published>
+    <updated>2021-12-21T03:40:27.204Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.install genpac with pip </p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install genpac</span><br></pre></td></tr></table></figure><p>or use </p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:<span class="comment">//github.com/JinnLynn/genpac</span></span><br></pre></td></tr></table></figure><p>2.create  autoproxy.pac file </p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">genpac -p <span class="string">&quot;SOCKS5 127.0.0.1:1080&quot;</span> --gfwlist-proxy=<span class="string">&quot;SOCKS5 127.0.0.1:1080&quot;</span></span><br><span class="line"> --output=<span class="string">&quot;autoproxy.pac&quot;</span></span><br><span class="line"> --gfwlist-url=<span class="string">&quot;https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt&quot;</span> </span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;1.install genpac with pip &lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/t</summary>
+      
+    
+    
+    
+    <category term="ubuntu" scheme="http://yoursite.com/categories/ubuntu/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>tips</title>
+    <link href="http://yoursite.com/2016/12/08/tips_note/"/>
+    <id>http://yoursite.com/2016/12/08/tips_note/</id>
+    <published>2016-12-07T16:00:00.000Z</published>
+    <updated>2021-12-21T03:40:27.207Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="little-tips"><a href="#little-tips" class="headerlink" title="little tips"></a>little tips</h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;little-tips&quot;&gt;&lt;a href=&quot;#little-tips&quot; class=&quot;headerlink&quot; title=&quot;little tips&quot;&gt;&lt;/a&gt;little tips&lt;/h2&gt;</summary>
+      
+    
+    
+    
+    <category term="tips" scheme="http://yoursite.com/categories/tips/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Git rm</title>
+    <link href="http://yoursite.com/2016/11/13/git_rm/"/>
+    <id>http://yoursite.com/2016/11/13/git_rm/</id>
+    <published>2016-11-12T16:00:00.000Z</published>
+    <updated>2021-12-21T03:40:27.205Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Git删除远程的文件"><a href="#Git删除远程的文件" class="headerlink" title="Git删除远程的文件"></a>Git删除远程的文件</h2><p>1.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm - - cached <span class="string">&quot;path+file name&quot;</span></span><br></pre></td></tr></table></figure><p>2.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;xxx&quot;</span></span><br></pre></td></tr></table></figure><p>3.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push </span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Git删除远程的文件&quot;&gt;&lt;a href=&quot;#Git删除远程的文件&quot; class=&quot;headerlink&quot; title=&quot;Git删除远程的文件&quot;&gt;&lt;/a&gt;Git删除远程的文件&lt;/h2&gt;&lt;p&gt;1.&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;</summary>
+      
+    
+    
+    
+    <category term="git" scheme="http://yoursite.com/categories/git/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>git 的10撤销技巧</title>
+    <link href="http://yoursite.com/2016/07/19/how-to-undo-almost-anything-with-git/"/>
+    <id>http://yoursite.com/2016/07/19/how-to-undo-almost-anything-with-git/</id>
+    <published>2016-07-18T16:00:00.000Z</published>
+    <updated>2021-12-21T03:40:27.205Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="git-的十种撤销技巧"><a href="#git-的十种撤销技巧" class="headerlink" title="git 的十种撤销技巧"></a>git 的十种撤销技巧</h2><p>任何一个版本控制系统中，最有用的特性之一莫过于 “撤销（undo）”操作。在Git中，“撤销”有很多种含义。<br>当你完成了一次新的提交（commit），Git会及时存储当前时刻仓库（repository）的快照（snapshot）；你能够使用Git将项目回退到任何之前的版本。<br>下文中，我将列举几个常见的、需要“撤销”的场景，并且展示如何使用Git来完成这些操作。</p><h3 id="一、撤销一个公共修改-Undo-a-“public”-change"><a href="#一、撤销一个公共修改-Undo-a-“public”-change" class="headerlink" title="一、撤销一个公共修改 Undo a “public” change"></a>一、撤销一个公共修改 Undo a “public” change</h3><p>场景： 你刚刚用git push将本地修改推送到了GitHub，这时你意识到在提交中有一个错误。你想撤销这次提交。</p><p>使用撤销命令：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git revert</span><br></pre></td></tr></table></figure><p>发生了什么： git revert将根据给定SHA的相反值，创建一个新的提交。如果旧提交是“matter”，那么新的提交就是“anti-matter”——旧提交中所有已移除的东西将会被添加进到新提交中，旧提交中增加的东西将在新提交中移除。<br>这是Git最安全、也是最简单的“撤销”场景，因为这样不会修改历史记录——你现在可以git push下刚刚revert之后的提交来纠正错误了。</p><h3 id="二、修改最近一次的提交信息-Fix-the-last-commit-message"><a href="#二、修改最近一次的提交信息-Fix-the-last-commit-message" class="headerlink" title="二、修改最近一次的提交信息 Fix the last commit message"></a>二、修改最近一次的提交信息 Fix the last commit message</h3><p>场景： 你只是在最后的提交信息中敲错了字，比如你敲了git commit -m “Fxies bug #42″，而在执行git push之前你已经意识到你应该敲”Fixes bug #42″。<br>使用撤销命令：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit –amend</span><br></pre></td></tr></table></figure><p>或者</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit –amend -m “Fixes bug #42″</span><br></pre></td></tr></table></figure><p>发生了什么： git commit –amend将使用一个包含了刚刚错误提交所有变更的新提交，来更新并替换这个错误提交。由于没有staged的提交，所以实际上这个提交只是重写了先前的提交信息。</p><h3 id="三、撤销本地更改-Undo-“local”-changes"><a href="#三、撤销本地更改-Undo-“local”-changes" class="headerlink" title="三、撤销本地更改 Undo “local” changes"></a>三、撤销本地更改 Undo “local” changes</h3><p>场景：你正在编辑的文件被保存了但是你的编辑器恰在此时崩溃了。此时你并没有提交过代码。你期望撤销这个文件中的所有修改——将这个文件回退到上次提交的状态。<br>使用撤销命令：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout —</span><br></pre></td></tr></table></figure><p>发生了什么： git checkout将工作目录（working directory）里的文件修改成先前Git已知的状态。你可以提供一个期待回退分支的名字或者一个确切的SHA码，Git也会默认检出HEAD——即：当前分支的上一次提交。<br>注意： 用这种方法“撤销”的修改都将真正的消失。它们永远不会被提交。因此Git不能恢复它们。此时，一定要明确自己在做什么！（或许可以用git diff来确定）</p><h3 id="重置本地修改-Reset-“local”-changes"><a href="#重置本地修改-Reset-“local”-changes" class="headerlink" title="重置本地修改 Reset “local” changes"></a>重置本地修改 Reset “local” changes</h3><p>场景： 你已经在本地做了一些提交（还没push），但所有的东西都糟糕透了，你想撤销最近的三次提交——就像它们从没发生过一样。<br>使用撤销命令：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset</span><br></pre></td></tr></table></figure><p>或者</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset –hard</span><br></pre></td></tr></table></figure><p>发生了什么： git reset将你的仓库纪录一直回退到指定的最后一个SHA代表的提交，那些提交就像从未发生过一样。默认情况下，git reset会保留工作目录（working directory）。这些提交虽然消失了，但是内容还在磁盘上。这是最安全的做法，但通常情况是：你想使用一个命令来“撤销”所有提交和本地修改——那么请使用–hard参数吧。</p><h3 id="五、撤销本地后重做-Redo-after-undo-“local”"><a href="#五、撤销本地后重做-Redo-after-undo-“local”" class="headerlink" title="五、撤销本地后重做 Redo after undo “local”"></a>五、撤销本地后重做 Redo after undo “local”</h3><p>   场景： 你已经提交了一些内容，并使用git reset –hard撤销了这些更改（见上面），突然意识到：你想还原这些修改！</p><p>   使用撤销命令：</p><p>   git reflog和git reset<br>   或者</p><p>   git checkout<br>   发生了什么： git reflog是一个用来恢复项目历史记录的好办法。你可以通过git reflog恢复几乎任何已提交的内容。</p><p>   你或许对git log命令比较熟悉，它能显示提交列表。git reflog与之类似，只不过git reflog显示的是HEAD变更次数的列表。</p><p>   一些说明：</p><p>   只有HEAD会改变。当你切换分支时，用git commit提交变更时，或是用git reset撤销提交时，HEAD都会改变。但当你用git checkout –时， HEAD不会发生改变。（就像上文提到的情形，那些更改根本就没有提交，因此reflog就不能帮助我们进行恢复了）<br>   git reflog不会永远存在。Git将会定期清理那些“不可达（unreachable）”的对象。不要期望能够在reflog里找到数月前的提交记录。<br>   reflog只是你个人的。你不能用你的reflog来恢复其他开发者未push的提交。<br>   因此，怎样合理使用reflog来找回之前“未完成”的提交呢？这要看你究竟要做什么：<br>   如果你想恢复项目历史到某次提交，那请使用git reset –hard<br>   如果你想在工作目录（working direcotry）中恢复某次提交中的一个或多个文件，并且不改变提交历史，那请使用git checkout–<br>   如果你想确切的回滚到某次提交，那么请使用git cherry-pick。</p><h3 id="六、与分支有关的那些事-Once-more-with-branching"><a href="#六、与分支有关的那些事-Once-more-with-branching" class="headerlink" title="六、与分支有关的那些事 Once more, with branching"></a>六、与分支有关的那些事 Once more, with branching</h3><p>场景： 你提交了一些变更，然后你意识到你正在master分支上，但你期望的是在feature分支上执行这些提交。<br>使用撤销命令：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">git branch feature, git reset –hard origin/master, 和 git checkout feature</span><br><span class="line">```    </span><br><span class="line">发生了什么： 你可能用的是git checkout -b来建立新的分支，这是创建和检出分支的便捷方法——但实际你并不想立刻切换分支。git branch feature会建立一个叫feature的分支，这个分支指向你最近的提交，但是你还停留在master分支上。</span><br><span class="line">git reset –hard将master回退至origin/master，并忽略所有新提交。别担心，那些提交都还保留在feature上。</span><br><span class="line">最后，git checkout将分支切换到feature，这个分支原封不动的保留了你最近的所有工作。</span><br><span class="line"></span><br><span class="line">### 七、事半功倍处理分支 Branch in time saves nine</span><br><span class="line">    </span><br><span class="line">场景： 你基于master新建了一个feature分支，但是master分支远远落后与origin/master。现在master分支与origin/master同步了，你期望此刻能在feature下立刻commit代码，并且不是在远远落后master的情况下。</span><br><span class="line">    </span><br><span class="line">使用撤销命令：</span><br><span class="line">```java</span><br><span class="line">git checkout feature和git rebase master</span><br></pre></td></tr></table></figure><p>发生了什么： 你也许已经敲了命令：git reset（但是没用–hard,有意在磁盘上保存这些提交内容），然后敲了git checkout -b，之后重新提交更改，但是那样的话，你将失去本地的提交记录。<br>不过，一个更好的方法,使用git rebase master可以做到一些事情：<br>首先，它定位你当前检出分支和master之间的共同祖先节点（common ancestor）。<br>然后，它将当前检出的分支重置到祖先节点（ancestor），并将后来所有的提交都暂存起来。<br>最后，它将当前检出分支推进至master末尾，同时在master最后一次提交之后，再次提交那些在暂存区的变更。</p><h3 id="八、批量撤销-找回-Mass-undo-redo"><a href="#八、批量撤销-找回-Mass-undo-redo" class="headerlink" title="八、批量撤销/找回 Mass undo/redo"></a>八、批量撤销/找回 Mass undo/redo</h3><p>场景： 你开始朝一个既定目标开发功能，但是中途你感觉用另一个方法更好。你已经有十几个提交，但是你只想要其中的某几个，其他的都可以删除不要。</p><p>使用撤销命令：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase -i</span><br></pre></td></tr></table></figure><p>发生了什么： -i将rebases设置为“交互模式（interactive mode）”。rebase开始执行的操作就像上文讨论的一样，但是在重新执行某个提交时，它会暂停下来，让你修改每一次提交。<br>rebase –i将会打开你的默认文本编辑器，然后列出正在执行的提交。<br>前两列最关键：第一列是选择命令，它会根据第二列中的SHA码选择相应的提交。默认情况下，rebase –i会认为每个更改都正通过pick命令被提交。<br>要撤销一个提交，直接在编辑器删除对应的行就可以了。<br>如果你想保留提交但修改提交信息，你可以使用reword命令。即，将命令关键字pick换成reword（或者r）。你现在可能想立刻修改提交消息，但这么做不会生效——rebase –i将忽略SHA列后的所有东西。现有的提交信息会帮助我们记住0835fe2代表什么。当你敲完rebase –i命令后，Git才开始提示你重写那些新提交消息。</p><p>如果你需要将2个提交合并，你可以用squash或者fixup命令，如下图：<br><a href="http://7xjrlb.com1.z0.glb.clouddn.com/3.png"></a></p><p>squash和fixup都是“向上”结合的——那些用了这些合并命令（编者按：指squash、fixup）的提交，将会和它之前的提交合并：上图中，0835fe2和6943e85将会合并成一个提交，而38f5e4e和af67f82将会合并成另一个提交。</p><p>当你用squash时，Git将会提示是否填写新的提交消息；fixup则会给出列表中第一个提交的提交信息。在上图中，af67f82是一个“Ooops”信息，因为这个提交信息已经同38f5e4e一样了。但是你可以为0835fe2和6943e85合并的新提交编写提交信息。</p><p>当你保存并退出编辑器时，Git将会按照从上到下的顺序执行你的提交。你可以在保存这些提交之前，修改提交的执行顺序。如果有需要，你可以将af67f82和0835fe2合并，并且可以这样排序：<br><a href="http://7xjrlb.com1.z0.glb.clouddn.com/4.png"></a></p><h3 id="九、修复早先的提交-Fix-an-earlier-commit"><a href="#九、修复早先的提交-Fix-an-earlier-commit" class="headerlink" title="九、修复早先的提交 Fix an earlier commit"></a>九、修复早先的提交 Fix an earlier commit</h3><p>场景： 之前的提交里落下了一个文件，如果先前的提交能有你留下的东西就好了。你还没有push，并且这个提交也不是最近的提交，因此你不能用commit –amend。<br>使用撤销命令：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit –squash和git rebase –autosquash -i</span><br></pre></td></tr></table></figure><p>发生了什么： git commit –squash将会创建一个新的提交，该提交信息可能像这样“squash! Earlier commit”。（你也可以手写这些提交信息，commit –squash只是省得让你打字了）。<br>如果你不想为合并的提交编写信息，也可以考虑使用命令git commit –fixup。这种情况下，你可能会使用commit –fixup，因为你仅希望在rebase中使用之前的提交信息。<br>rebase –autosquash –i将会启动rebase交互编辑器，编辑器会列出任何已完成的squash!和fixup!提交，如下图：<br><a href="http://7xjrlb.com1.z0.glb.clouddn.com/5.png"></a><br>当使用–squash和–fixup时，你或许记不清你想修复的某个提交的SHA码——只知道它可能在一个或五个提交之前。你或许可以使用Git的^和<del>操作符手动找回。HEAD^表示HEAD的前一次提交。HEAD</del>4表示HEAD前的4次提交，加起来总共是前5次提交。</p><h3 id="十、停止跟踪一个已被跟踪的文件-Stop-tracking-a-tracked-file"><a href="#十、停止跟踪一个已被跟踪的文件-Stop-tracking-a-tracked-file" class="headerlink" title="十、停止跟踪一个已被跟踪的文件 Stop tracking a tracked file"></a>十、停止跟踪一个已被跟踪的文件 Stop tracking a tracked file</h3><p>场景： 你意外将application.log添加到仓库中，现在你每次运行程序，Git都提示application.log中有unstaged的提交。你在.gitignore中写上”*.log”，但仍旧没用——怎样告诉Git“撤销”跟踪这个文件的变化呢？<br>使用撤销命令：</p><pre><code class="java">git rm –cached application.log</code></pre><p>发生了什么： 尽管.gitignore阻止Git跟踪文件的变化，甚至是之前没被跟踪的文件是否存在，但是，一旦文件被add或者commit，Git会开始持续跟踪这个文件的变化。类似的，如果你用git add –f来“强制”add，或者覆盖.gitignore，Git还是会继续监视变化。所以以后最好不要使用–f来add .gitignore文件。<br>如果你希望移除那些应当被忽略的文件，git rm –cached可以帮助你，并将这些文件保留在磁盘上。因为这个文件现在被忽略了，你将不会在git status中看到它，也不会再把这个文件commit了。<br>以上就是如何在Git上撤销的方法。</p><p>转载自：jointforce<br>文章地址：<a href="http://www.jointforce.com/jfperiodical/article/796">http://www.jointforce.com/jfperiodical/article/796</a><br>英文原文：<a href="https://github.com/blog/2019-how-to-undo-almost-anything-with-git">https://github.com/blog/2019-how-to-undo-almost-anything-with-git</a><br>译者：李伟 </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;git-的十种撤销技巧&quot;&gt;&lt;a href=&quot;#git-的十种撤销技巧&quot; class=&quot;headerlink&quot; title=&quot;git 的十种撤销技巧&quot;&gt;&lt;/a&gt;git 的十种撤销技巧&lt;/h2&gt;&lt;p&gt;任何一个版本控制系统中，最有用的特性之一莫过于 “撤销（undo）”</summary>
+      
+    
+    
+    
+    <category term="git" scheme="http://yoursite.com/categories/git/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>查询电话号码</title>
+    <link href="http://yoursite.com/2016/05/16/Phone_number/"/>
+    <id>http://yoursite.com/2016/05/16/Phone_number/</id>
+    <published>2016-05-15T16:00:00.000Z</published>
+    <updated>2021-12-21T03:40:27.204Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="查询电话号码"><a href="#查询电话号码" class="headerlink" title="查询电话号码"></a>查询电话号码</h2><ol><li>code utils</li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.phone.number;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.json.JSONException;</span><br><span class="line"><span class="keyword">import</span> org.json.JSONObject;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.BufferedReader;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"><span class="keyword">import</span> java.io.InputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.InputStreamReader;</span><br><span class="line"><span class="keyword">import</span> java.net.HttpURLConnection;</span><br><span class="line"><span class="keyword">import</span> java.net.MalformedURLException;</span><br><span class="line"><span class="keyword">import</span> java.net.URL;</span><br><span class="line"><span class="keyword">import</span> java.net.URLConnection;</span><br><span class="line"><span class="keyword">import</span> java.util.Locale;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PhoneUtil</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// RESTful API of Sogou</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String REST_URL =</span><br><span class="line">            <span class="string">&quot;http://data.haoma.sogou.com/vrapi/query_number.php?&quot;</span> +</span><br><span class="line">                    <span class="string">&quot;number=%s&amp;type=json&amp;callback=show&quot;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">detect</span><span class="params">(<span class="keyword">final</span> String phoneNumber, <span class="keyword">final</span> Callback callback)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">final</span> String restURL = String.format(Locale.getDefault(), REST_URL, phoneNumber);</span><br><span class="line">        <span class="keyword">new</span> Thread() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">                InputStream inputStream;</span><br><span class="line">                InputStreamReader inputStreamReader;</span><br><span class="line">                BufferedReader reader;</span><br><span class="line">                StringBuilder resultBuilder = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">                String tempLine;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">try</span> &#123;</span><br><span class="line">                    URL localURL = <span class="keyword">new</span> URL(restURL);</span><br><span class="line">                    URLConnection connection = localURL.openConnection();</span><br><span class="line">                    HttpURLConnection httpURLConnection = (HttpURLConnection) connection;</span><br><span class="line"></span><br><span class="line">                    httpURLConnection.setRequestProperty(<span class="string">&quot;Accept-Charset&quot;</span>, <span class="string">&quot;utf-8&quot;</span>);</span><br><span class="line">                    httpURLConnection.setRequestProperty(<span class="string">&quot;Content-Type&quot;</span>, <span class="string">&quot;application/json&quot;</span>);</span><br><span class="line"></span><br><span class="line">                    inputStream = httpURLConnection.getInputStream();</span><br><span class="line">                    inputStreamReader = <span class="keyword">new</span> InputStreamReader(inputStream);</span><br><span class="line">                    reader = <span class="keyword">new</span> BufferedReader(inputStreamReader);</span><br><span class="line"></span><br><span class="line">                    <span class="keyword">while</span> ((tempLine = reader.readLine()) != <span class="keyword">null</span>) &#123;</span><br><span class="line">                        resultBuilder.append(tempLine);</span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                    reader.close();</span><br><span class="line">                    inputStreamReader.close();</span><br><span class="line">                    inputStream.close();</span><br><span class="line"></span><br><span class="line">                    callback.onResult(phoneNumber,</span><br><span class="line">                            getInfomationfromResult(resultBuilder.toString()),</span><br><span class="line">                            httpURLConnection.getResponseCode(),</span><br><span class="line">                            <span class="keyword">null</span>);</span><br><span class="line">                &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">                    e.printStackTrace();</span><br><span class="line">                    callback.onResult(phoneNumber, <span class="string">&quot;&quot;</span>, -<span class="number">1</span>, e);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;.start();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> String <span class="title">getInfomationfromResult</span><span class="params">(String result)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            String info = result.substring(<span class="number">5</span>, result.length() - <span class="number">1</span>);</span><br><span class="line">            JSONObject json = <span class="keyword">new</span> JSONObject(info);</span><br><span class="line">            info = json.getString(<span class="string">&quot;NumInfo&quot;</span>);</span><br><span class="line">            String splitResult[] = info.split(<span class="string">&quot;：&quot;</span>);</span><br><span class="line">            <span class="keyword">return</span> splitResult[splitResult.length &gt; <span class="number">1</span> ? <span class="number">1</span> : <span class="number">0</span>];</span><br><span class="line">        &#125; <span class="keyword">catch</span> (JSONException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Callback</span> </span>&#123;</span><br><span class="line">        <span class="comment">// e == null means success</span></span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">onResult</span><span class="params">(String phoneNumber, String result, <span class="keyword">int</span> responseCode, Exception e)</span></span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ol start="2"><li>use</li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.phone.number;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Locale;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PhoneNumber</span> <span class="keyword">implements</span>  <span class="title">PhoneUtil</span>.<span class="title">Callback</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span> <span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        PhoneUtil.detect(<span class="string">&quot;5992 8888&quot;</span>, <span class="keyword">new</span> PhoneNumber());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onResult</span><span class="params">(String phoneNumber, String result, <span class="keyword">int</span> responseCode, Exception e)</span> </span>&#123;</span><br><span class="line">        Log.i(String.format(Locale.getDefault(),</span><br><span class="line">                <span class="string">&quot;onResult phoneNumber = %s, result = %s, responseCode = %s, e = %s&quot;</span>,phoneNumber, result, responseCode, e));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;查询电话号码&quot;&gt;&lt;a href=&quot;#查询电话号码&quot; class=&quot;headerlink&quot; title=&quot;查询电话号码&quot;&gt;&lt;/a&gt;查询电话号码&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;code utils&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight j</summary>
+      
+    
+    
+    
+    <category term="other" scheme="http://yoursite.com/categories/other/"/>
+    
+    
+    <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>parse server install with local</title>
+    <link href="http://yoursite.com/2016/05/15/parse-server_with_local/"/>
+    <id>http://yoursite.com/2016/05/15/parse-server_with_local/</id>
+    <published>2016-05-14T16:00:00.000Z</published>
+    <updated>2021-12-21T03:40:27.207Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="本地安装-parse-server"><a href="#本地安装-parse-server" class="headerlink" title="本地安装 parse server"></a>本地安装 parse server</h2><h1 id="环境："><a href="#环境：" class="headerlink" title="环境："></a>环境：</h1><ol><li>ubuntu 16.04</li><li>git</li><li>node</li><li>npm</li></ol><h1 id="安装"><a href="#安装" class="headerlink" title="安装:"></a>安装:</h1><ol><li><a href="git@github.com:ParsePlatform/parse-server-example.git">git clone 该项目</a></li><li>cd 到项目根目录 执行 npm install -g</li><li><a href="https://github.com/ParsePlatform/parse-dashboard">安装 parse-dashboard </a></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;本地安装-parse-server&quot;&gt;&lt;a href=&quot;#本地安装-parse-server&quot; class=&quot;headerlink&quot; title=&quot;本地安装 parse server&quot;&gt;&lt;/a&gt;本地安装 parse server&lt;/h2&gt;&lt;h1 id=&quot;环境：&quot;&gt;</summary>
+      
+    
+    
+    
+    <category term="node.js" scheme="http://yoursite.com/categories/node-js/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>React Native for linux and android tips</title>
+    <link href="http://yoursite.com/2016/04/19/react-native/"/>
+    <id>http://yoursite.com/2016/04/19/react-native/</id>
+    <published>2016-04-18T16:00:00.000Z</published>
+    <updated>2021-12-21T03:40:27.207Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="linux-下安装react-native"><a href="#linux-下安装react-native" class="headerlink" title="linux 下安装react native"></a>linux 下安装react native</h2><p>1 参考 <a href="http://facebook.github.io/react-native/docs/getting-started.html">官方文档</a></p><p>1.1 安装 node.js</p><p>参考<a href="https://nodejs.org/en/">Node.js官网的安装方法</a></p><p>1.2 安装 watchman </p><p> <a href="https://facebook.github.io/watchman/docs/install.html">watchman</a>是一个Facebook制作的工具，<br> 用来监测文件系统的变更。安装这一工具可以提高性能，并避免node中的一个监视文件的bug。将下面的命令粘贴到终端中，以通过源代码来编译并安装watchman.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git clone https:<span class="comment">//github.com/facebook/watchman.git</span></span><br><span class="line">cd watchman</span><br><span class="line">git checkout v4.5.0  # the latest stable release</span><br><span class="line">./autogen.sh</span><br><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure><p>如果安装出现如下错误    </p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">➜ /home/code/github/watchman git:(8bb8f8f) &gt;sudo make install</span><br><span class="line">cd python &amp;&amp; /usr/bin/python ./setup.py clean build_py -c -d . build_ext -i</span><br><span class="line">running clean</span><br><span class="line">removing <span class="string">&#x27;build/temp.linux-x86_64-2.7&#x27;</span> (and everything under it)</span><br><span class="line">removing <span class="string">&#x27;build&#x27;</span></span><br><span class="line">running build_py</span><br><span class="line">running build_ext</span><br><span class="line">building <span class="string">&#x27;pywatchman.bser&#x27;</span> extension</span><br><span class="line">creating build</span><br><span class="line">creating build/temp.linux-x86_64-<span class="number">2.7</span></span><br><span class="line">creating build/temp.linux-x86_64-<span class="number">2.7</span>/pywatchman</span><br><span class="line">x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -I/usr/include/python2<span class="number">.7</span> -c pywatchman/bser.c -o build/temp.linux-x86_64-<span class="number">2.7</span>/pywatchman/bser.o</span><br><span class="line">pywatchman/bser.c:<span class="number">31</span>:<span class="number">20</span>: fatal error: Python.h: No such file or directory</span><br><span class="line">#include </span><br><span class="line">^</span><br><span class="line">compilation terminated.</span><br><span class="line">error: command <span class="string">&#x27;x86_64-linux-gnu-gcc&#x27;</span> failed with exit status <span class="number">1</span></span><br><span class="line">make: *** [py-build] Error <span class="number">1</span></span><br></pre></td></tr></table></figure><p>是因为没有安装python-dev(我的是这样),请参考watchman 的installing from source 部分安装其他的依赖</p><p>1.3 安装Flow</p><p>Flow是针对JavaScript的静态类型检查工具。运行下面的命令来安装Flow</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install -g flow-bin</span><br></pre></td></tr></table></figure><p>1.4 安装 React Native</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g react-<span class="keyword">native</span>-cli</span><br></pre></td></tr></table></figure><p>1.5 创建项目</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ react-<span class="keyword">native</span> init AwesomeProject</span><br></pre></td></tr></table></figure><p>1.6 运行android 项目</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">启动react 的server</span><br><span class="line">$ react-<span class="keyword">native</span> start</span><br><span class="line"> </span><br><span class="line">进入项目目录</span><br><span class="line">$ cd AwesomeProject</span><br><span class="line"></span><br><span class="line">启动android 项目</span><br><span class="line">$ react-<span class="keyword">native</span> run-android</span><br></pre></td></tr></table></figure><p>1.7 真机运行</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">你可以摇晃手机或者 adb shell input keyevent <span class="number">82</span> 打开开发者选项</span><br><span class="line">点击 Dev Settings</span><br><span class="line">点击  Debug server host <span class="keyword">for</span> device</span><br><span class="line">输入你的电脑ip和端口号(如<span class="number">10.0</span><span class="number">.1</span><span class="number">.1</span><span class="number">.1</span>:<span class="number">8081</span>),且<span class="number">8081</span>是react <span class="keyword">native</span> 的默认端口号</span><br><span class="line">返回选择 Reload JS </span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;linux-下安装react-native&quot;&gt;&lt;a href=&quot;#linux-下安装react-native&quot; class=&quot;headerlink&quot; title=&quot;linux 下安装react native&quot;&gt;&lt;/a&gt;linux 下安装react native&lt;/</summary>
+      
+    
+    
+    
+    <category term="react native" scheme="http://yoursite.com/categories/react-native/"/>
+    
+    
+    <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>node 小技巧</title>
+    <link href="http://yoursite.com/2016/03/20/node-tips/"/>
+    <id>http://yoursite.com/2016/03/20/node-tips/</id>
+    <published>2016-03-20T05:54:46.000Z</published>
+    <updated>2021-12-21T03:40:27.206Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="node-小技巧"><a href="#node-小技巧" class="headerlink" title="node 小技巧"></a>node 小技巧</h2><h1 id="1"><a href="#1" class="headerlink" title="1"></a>1</h1><p>使用如下命令可以查看,node应用的依赖是否需要更新</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm outdated</span><br></pre></td></tr></table></figure><p>输出结果，</p><ol><li>current是当前使用的版本，</li><li>wanted是符合条件的最新版本，</li><li>latest是最新发布的版本,</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;node-小技巧&quot;&gt;&lt;a href=&quot;#node-小技巧&quot; class=&quot;headerlink&quot; title=&quot;node 小技巧&quot;&gt;&lt;/a&gt;node 小技巧&lt;/h2&gt;&lt;h1 id=&quot;1&quot;&gt;&lt;a href=&quot;#1&quot; class=&quot;headerlink&quot; title=</summary>
+      
+    
+    
+    
+    <category term="node.js" scheme="http://yoursite.com/categories/node-js/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Linux下安装Erlang</title>
+    <link href="http://yoursite.com/2016/03/20/linux-setup-Erlang/"/>
+    <id>http://yoursite.com/2016/03/20/linux-setup-Erlang/</id>
+    <published>2016-03-19T16:00:00.000Z</published>
+    <updated>2021-12-21T03:40:27.205Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Linux下安装Erlang"><a href="#Linux下安装Erlang" class="headerlink" title="Linux下安装Erlang"></a>Linux下安装Erlang</h2><p>1.访问官网下载页找到适合自己机器运行的版本；</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http:<span class="comment">//www.erlang.org/download/</span></span><br></pre></td></tr></table></figure><p>2.将Erlang下载到本地</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http:<span class="comment">//www.erlang.org/download/xxxx.tar.gz</span></span><br></pre></td></tr></table></figure><p>3.解压并安装</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>tar -zxvf xxxx.tar.gz</span><br><span class="line"><span class="number">2.</span><span class="function">cd <span class="title">xxxx</span><span class="params">(解压后的文件夹)</span></span></span><br><span class="line"><span class="function">3. ./configure</span></span><br><span class="line"><span class="function">4. make &amp;&amp;  make install</span></span><br></pre></td></tr></table></figure><p>如果出现错误请检查权限,在第4条加上sudo 再次执行</p><p>4.注意，这里是使用默认的路径进行安装，安装完后输入“erl”以下提示即为安装成功：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Erlang/OTP <span class="number">18</span> [erts-<span class="number">7.1</span>] [source] [<span class="number">64</span>-bit] [smp:<span class="number">8</span>:<span class="number">8</span>] [async-threads:<span class="number">10</span>] [hipe] [kernel-poll:<span class="keyword">false</span>]</span><br><span class="line">Eshell V7<span class="number">.1</span>  (abort with ^G)</span><br><span class="line"><span class="number">1</span>&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>所显示的内容有差异,我安装的erlang 版本是OPT-18的版本</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Linux下安装Erlang&quot;&gt;&lt;a href=&quot;#Linux下安装Erlang&quot; class=&quot;headerlink&quot; title=&quot;Linux下安装Erlang&quot;&gt;&lt;/a&gt;Linux下安装Erlang&lt;/h2&gt;&lt;p&gt;1.访问官网下载页找到适合自己机器运行的版本</summary>
+      
+    
+    
+    
+    <category term="Erlang" scheme="http://yoursite.com/categories/Erlang/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Go 安装</title>
+    <link href="http://yoursite.com/2015/11/28/go/"/>
+    <id>http://yoursite.com/2015/11/28/go/</id>
+    <published>2015-11-27T16:00:00.000Z</published>
+    <updated>2021-12-21T03:40:27.205Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="语言安装linux"><a href="#语言安装linux" class="headerlink" title="语言安装linux"></a>语言安装linux</h2><ol><li></li></ol><p>下载go 解压到/usr/local/ 下  </p><ol start="2"><li><h2 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h2><pre><code class="bash">$ vim .bashrc </code></pre></li></ol><p>最后面添加<br>export GOPATH=~/home/kevin/go ###根据你的设置<br>export GOROOT=/usr/local/go ###根据你的设置<br>export PATH=${PATH}:$GOPATH/bin:$GOROOT/bin  </p><p>3.</p><h2 id="新建项目"><a href="#新建项目" class="headerlink" title="新建项目"></a>新建项目</h2><p>在GOPATH 的src 下面新建项目</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;语言安装linux&quot;&gt;&lt;a href=&quot;#语言安装linux&quot; class=&quot;headerlink&quot; title=&quot;语言安装linux&quot;&gt;&lt;/a&gt;语言安装linux&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;下载go 解压到/usr/local/ 下</summary>
+      
+    
+    
+    
+    <category term="go" scheme="http://yoursite.com/categories/go/"/>
+    
+    
+  </entry>
+  
+</feed>
