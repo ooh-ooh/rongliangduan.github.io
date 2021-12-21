@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-12-21T04:05:39.511Z</updated>
+  <updated>2021-12-21T04:17:56.632Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title></title>
+    <link href="http://yoursite.com/2021/12/21/test/"/>
+    <id>http://yoursite.com/2021/12/21/test/</id>
+    <published>2021-12-21T04:17:54.210Z</published>
+    <updated>2021-12-21T04:17:56.632Z</updated>
+    
+    <content type="html"><![CDATA[<p>layout: post<br>title: Why Sun is the center of our solar system<br>date: ‘2014-07-02 22:44:44 -0400’<br>comments: true<br>categories:</p><ul><li>Solar System</li><li>Javascript</li><li>Simulation</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;layout: post&lt;br&gt;title: Why Sun is the center of our solar system&lt;br&gt;date: ‘2014-07-02 22:44:44 -0400’&lt;br&gt;comments: true&lt;br&gt;categories:&lt;/p</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>LeetCode 231. Power of Two</title>
     <link href="http://yoursite.com/2021/12/21/leetcode_231_power_of_two/"/>
     <id>http://yoursite.com/2021/12/21/leetcode_231_power_of_two/</id>
     <published>2021-12-20T16:00:00.000Z</published>
-    <updated>2021-12-21T04:05:39.511Z</updated>
+    <updated>2021-12-21T04:12:08.082Z</updated>
     
     <content type="html"><![CDATA[<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isPowerOfTwo</span>(<span class="params">n: <span class="built_in">number</span></span>): <span class="title">boolean</span> </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> m=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(m&lt;n)&#123;</span><br><span class="line">          m=m*<span class="number">2</span></span><br><span class="line">          &#125;</span><br><span class="line">    <span class="keyword">return</span> m==n</span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>This solution is to do multiplication, create a new variable, the initial value is 1, and then loop multiply by 2. As long as the variable is less than n, finally judge whether the variable and n are equal.</p>]]></content>
     
@@ -448,31 +468,6 @@
     
     
     <category term="Erlang" scheme="http://yoursite.com/categories/Erlang/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Go 安装</title>
-    <link href="http://yoursite.com/2015/11/28/go/"/>
-    <id>http://yoursite.com/2015/11/28/go/</id>
-    <published>2015-11-27T16:00:00.000Z</published>
-    <updated>2021-12-21T03:40:27.205Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="语言安装linux"><a href="#语言安装linux" class="headerlink" title="语言安装linux"></a>语言安装linux</h2><ol><li></li></ol><p>下载go 解压到/usr/local/ 下  </p><ol start="2"><li><h2 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h2><pre><code class="bash">$ vim .bashrc </code></pre></li></ol><p>最后面添加<br>export GOPATH=~/home/kevin/go ###根据你的设置<br>export GOROOT=/usr/local/go ###根据你的设置<br>export PATH=${PATH}:$GOPATH/bin:$GOROOT/bin  </p><p>3.</p><h2 id="新建项目"><a href="#新建项目" class="headerlink" title="新建项目"></a>新建项目</h2><p>在GOPATH 的src 下面新建项目</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;语言安装linux&quot;&gt;&lt;a href=&quot;#语言安装linux&quot; class=&quot;headerlink&quot; title=&quot;语言安装linux&quot;&gt;&lt;/a&gt;语言安装linux&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;下载go 解压到/usr/local/ 下</summary>
-      
-    
-    
-    
-    <category term="go" scheme="http://yoursite.com/categories/go/"/>
     
     
   </entry>

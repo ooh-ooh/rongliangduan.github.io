@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2021/12/21/test/</loc>
+    
+    <lastmod>2021-12-21</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2021/12/21/leetcode_231_power_of_two/</loc>
     
     <lastmod>2021-12-21</lastmod>
@@ -9,14 +16,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/05/15/parse-server_with_local/</loc>
+    <loc>http://yoursite.com/2016/04/19/react-native/</loc>
     
     <lastmod>2021-12-21</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/04/19/react-native/</loc>
+    <loc>http://yoursite.com/2016/05/15/parse-server_with_local/</loc>
     
     <lastmod>2021-12-21</lastmod>
     
@@ -128,13 +135,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2017/01/22/android-studio-tips/</loc>
-    
-    <lastmod>2021-12-21</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/2017/01/04/choose_jdk_or_openjdk/</loc>
     
     <lastmod>2021-12-21</lastmod>
@@ -142,7 +142,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/12/10/create_pac/</loc>
+    <loc>http://yoursite.com/2017/01/22/android-studio-tips/</loc>
     
     <lastmod>2021-12-21</lastmod>
     
@@ -150,6 +150,13 @@
   
   <url>
     <loc>http://yoursite.com/2017/12/28/docker_commend/</loc>
+    
+    <lastmod>2021-12-21</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/12/10/create_pac/</loc>
     
     <lastmod>2021-12-21</lastmod>
     
@@ -202,14 +209,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/ubuntu/</loc>
+    <loc>http://yoursite.com/categories/Docker/</loc>
     <lastmod>2021-12-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/Docker/</loc>
+    <loc>http://yoursite.com/categories/ubuntu/</loc>
     <lastmod>2021-12-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -237,14 +244,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/LeetCode/</loc>
+    <loc>http://yoursite.com/categories/Erlang/</loc>
     <lastmod>2021-12-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/Erlang/</loc>
+    <loc>http://yoursite.com/categories/LeetCode/</loc>
     <lastmod>2021-12-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
